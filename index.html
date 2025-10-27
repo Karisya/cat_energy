@@ -12,8 +12,18 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="./img/logo-desktop.svg" alt="logo">
-            </div>
+                <picture>
+                    <source srcset="./img/logo-mobile.svg" media="(max-width: 480px)">
+                    <source srcset="./img/logo-tablet.svg" media="(max-width: 768px)">
+                    <img src="./img/logo-desktop.svg" alt="logo">
+                </picture>
+            </div>    
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <nav class="header__menu">
                 <ul class="header__list">
                     <li><a href="#" class="header__link">главная</a></li>
