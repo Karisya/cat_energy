@@ -16,6 +16,7 @@ ul,ol{
 a,
 a:link,
 a:visited {
+    margin: 0;
   text-decoration: none;
   color: inherit;
 }
@@ -43,20 +44,20 @@ select {
 /*-------------------------------------------*/
 
 [class$="__container"] {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 @media(max-width:767.98px){
  [class$="__container"] {
-  max-width: 709px;
+  max-width: 729px;
 }   
 
 }
 @media(max-width:319.98px){
  [class$="__container"] {
-  max-width: 280px;
+  max-width: 300px;
 }   
 }
 
@@ -82,6 +83,15 @@ $DARK_GREY:#444444;
     z-index: 1000;
     display: flex;
     align-items: center;
+
+    &__logo{
+        padding-right: 10px;
+    }
+
+    .logo-tablet,.logo-mobile{
+        display: none;
+    }
+
     &__container {
         width: 100%;
         display: flex;
@@ -91,16 +101,36 @@ $DARK_GREY:#444444;
     &__list {
         display: flex;
         color: #000;
+        align-items: center;
+        text-align: center;
+        li{
+            position: relative;
+            &:first-child{
+                margin-right: 37px;
+            }
+            &:last-child{
+                margin-left: 32px;
+            }
+
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $BLACK;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
     }
     &__link{
         font-size: 20px;
         text-transform: uppercase;
-        &:first-child{
-            margin-right: 37px;
-        }
-        &:last-child{
-            margin-left: 32px;
-        }
     }
 
 }
@@ -110,27 +140,52 @@ $DARK_GREY:#444444;
 
     .header{
         height: 100px;
+        .logo-desktop,.logo-mobile{
+        display: none;
+        }
+        .logo-tablet{
+            display: inline-flex;
+        }
         &__list{
             color: $BLACK;
+            column-gap: 35px;
         }
         &__link{
-        font-size: 18px;
-        &:first-child{
-            margin-right: 34px;
-        }
-        &:last-child{
-            margin-left: 36px;
-        }
+            font-size: 18px;
     }
     }
-
 }
-@media(max-width:319.98px){
 
+@media(max-width:710px){
+    .header{
+
+        &__list{
+            font-size: 16px;
+            color: $BLACK;
+            column-gap: 15px;
+        }
+        &__link{
+            font-size: 18px;
+    }
+    }
+}
+
+@media(max-width:319.98px){
+    .header{
+        &__logo{
+            flex: 0 1 70%;
+        }
+        .logo-mobile{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo-desktop,.logo-tablet{
+            display: none;
+        }
+    }
 }
 
 /*---------------BURGER-MENU----------------------------*/
-
 .burger-checkbox {
   display: none;
 }
@@ -139,7 +194,7 @@ $DARK_GREY:#444444;
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
-  height: 16px;
+  height: 18px;
   cursor: pointer;
   span {
    display: block;
@@ -148,7 +203,7 @@ $DARK_GREY:#444444;
    transition: all 0.3s;
  }
 }
-@media(max-width: 500px) {
+@media(max-width: 600px) {
   .header__menu {
     position: absolute;
     top: 0;
@@ -161,12 +216,11 @@ $DARK_GREY:#444444;
   }
 
   .header__list{
-    padding: 70px 5px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 100px;
     row-gap: 30px;
     color: $WHITE;
+    flex-direction: column;
+    align-items: baseline;
   }
   .burger {
     z-index: 100;
@@ -176,13 +230,13 @@ $DARK_GREY:#444444;
     transform: translateX(0);
   }
   .burger-checkbox:checked + .burger span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5.5px, 5.5px);
   }
   .burger-checkbox:checked + .burger span:nth-child(2) {
     opacity: 0;
   }
   .burger-checkbox:checked + .burger span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5.5px, -5.5px);
   }
 }
 /*-------------------------------------------*/
