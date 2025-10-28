@@ -65,6 +65,12 @@ body {
   font-family: "Oswald";
 }
 
+.hdr {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
 /*-------------------HEADER------------------------*/
 .header {
   height: 165px;
@@ -241,9 +247,6 @@ body {
   max-width: 415px;
 }
 .mainblock__header {
-  font-weight: 400;
-  line-height: 100%;
-  font-size: 60px;
   margin-bottom: 40px;
   z-index: 3;
 }
@@ -453,6 +456,9 @@ body {
   }
 }
 @media (max-width: 570px) {
+  .info {
+    margin-bottom: 27px;
+  }
   .card-info {
     padding: 21px 22px 19px 22px;
   }
@@ -481,6 +487,56 @@ body {
     gap: 15px;
   }
 }
-/*-------------------------------------------*/
+/*-----------------HOW IT WORK--------------------------*/
+.howItWork__holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 69px;
+}
+.howItWork__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 230px;
+}
+.howItWork__header {
+  margin-bottom: 72px;
+}
+.howItWork__image {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 31px;
+  z-index: 3;
+}
+.howItWork__image img {
+  z-index: 3;
+}
+.howItWork__image::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #68B738;
+}
+.howItWork__text {
+  z-index: 2;
+  color: #444444;
+}
+.howItWork__point {
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 0;
+  position: absolute;
+  font-size: 280px;
+  color: #F2F2F2;
+}
 
 /*# sourceMappingURL=style.css.map */
