@@ -71,6 +71,7 @@ $BASIC_GREEN:#68B738;
 $WHITE:#ffff;
 $BLACK:#000;
 $DARK_GREY:#444444;
+$BASIC_GREY:#F2F2F2;
 
 /*-------------------HEADER------------------------*/
 
@@ -245,11 +246,12 @@ $DARK_GREY:#444444;
 /*------------------MAINBLOCK-------------------------*/
 
 .mainblock {
+    margin-bottom: 82px;
     height: 696px;
     display: flex;
     background:
         linear-gradient(to right, $WHITE 50%, transparent 50%),
-        url("../img/background-image.jpg") right center / contain no-repeat;
+        url("../img/mainblock/background-image.jpg") right center / contain no-repeat;
     align-items: center;
     &__container{
         position: relative;
@@ -302,7 +304,7 @@ $DARK_GREY:#444444;
  .mainblock {
    background:
     linear-gradient(to right, $WHITE 35%, transparent 0%),
-    url("../img/background-image.jpg") right center / contain no-repeat;   
+    url("../img/mainblock/background-image.jpg") right center / contain no-repeat;   
 }
 
 }
@@ -356,7 +358,7 @@ $DARK_GREY:#444444;
  .mainblock {
        height: 100%;
     background:
-    url("../img/background-image.jpg") right center / contain no-repeat;
+    url("../img/mainblock/background-image.jpg") right center / contain no-repeat;
    &__container{
         max-width: 540px;
         top: 140px;
@@ -395,7 +397,64 @@ $DARK_GREY:#444444;
 }
 }
 
-/*-------------------------------------------*/
+/*-------------------INFO------------------------*/
+
+.info {
+    margin-bottom: 71px;
+    &__holder {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 80px;
+    }
+}
+
+.card-info {
+    padding: 41px 51px 55px 52px;
+    background-color: $BASIC_GREY;   
+    max-width: 570px;
+    &__header {
+        font-size: 36px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        column-gap: 62px;
+        margin-bottom: 39px;
+    }
+    &__image {
+        position: relative;
+         width: 100px;
+        height: 100px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        img{
+            position: relative;
+            z-index: 2;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $BASIC_GREEN;
+            inset: 0;
+            z-index: 0;
+            border-radius: 50%;
+        }
+    }
+    &__text {
+        line-height: 150%;
+        font-family: "Arial";
+        margin-bottom: 23px;
+    }
+    &__button {
+        display: flex;
+        font-size: 20px;
+        text-transform: uppercase;
+        column-gap: 28px;
+        align-items: center;
+    }
+}
 
 /*-------------------------------------------*/
 
