@@ -572,6 +572,9 @@ body {
   }
 }
 /*------------------EXAMPLE---------------------------*/
+.example {
+  position: relative;
+}
 .example__header {
   margin-bottom: 76px;
 }
@@ -621,6 +624,73 @@ body {
   text-transform: uppercase;
   display: flex;
   column-gap: 63px;
+}
+.example__beforeAfter {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slider {
+  --value: 50%;
+  position: relative;
+  width: 690px;
+  height: 656px;
+  overflow: hidden;
+}
+
+.slider__img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider__img--before {
+  width: var(--value);
+  object-position: left;
+}
+
+.slider__range-js {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 2;
+  -webkit-appearance: none;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.slider__range-js::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -8px;
+}
+
+.slider__range-js::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__img--after {
+  width: calc(100% - var(--value));
+  left: var(--value);
+  object-position: calc(100% + 120px) center;
 }
 
 /*# sourceMappingURL=style.css.map */

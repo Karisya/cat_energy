@@ -165,13 +165,41 @@
                         </div>
                     </div>
                     <div class="example__beforeAfter">
-                        <span>было</span>
-                        <input type="range" min="0" max="100" value="50" class="example__input">
-                        <span>стало</span>
+                        <div class="slider">
+                            <picture>
+                                <img src="./img/example/before.png" alt="До" class="slider__img slider__img--before" width="300" height="300">
+                            </picture>
+                            <picture>
+                                <img src="./img/example/after.png" alt="После" class="slider__img slider__img--after" width="300" height="300">
+                            </picture>
+
+                            <input type="range" class="slider__range-js" min="0" max="100" value="50" step="1">
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
+
+        
+
+
+
+
+
+
+
+</section>
+
     </main>
+    <script>
+const slider = document.querySelector('.slider');
+const range = document.querySelector('.slider__range-js');
+
+range.addEventListener('input', () => {
+  slider.style.setProperty('--value', range.value + '%');
+});
+</script>
+
 </body>
 </html>
