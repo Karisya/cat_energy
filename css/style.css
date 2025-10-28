@@ -488,10 +488,14 @@ body {
   }
 }
 /*-----------------HOW IT WORK--------------------------*/
+.howItWork {
+  margin-bottom: 69px;
+}
 .howItWork__holder {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 69px;
+  flex-wrap: wrap;
+  row-gap: 130px;
 }
 .howItWork__card {
   position: relative;
@@ -537,6 +541,30 @@ body {
   position: absolute;
   font-size: 280px;
   color: #F2F2F2;
+}
+
+@media (max-width: 520px) {
+  .howItWork__holder {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .howItWork__card {
+    position: relative;
+    flex-direction: row;
+    max-width: 100%;
+    column-gap: 20px;
+  }
+  .howItWork__image {
+    height: 60px;
+    width: 60px;
+    flex-shrink: 0;
+  }
+  .howItWork__point {
+    display: none;
+  }
+  .howItWork__text {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

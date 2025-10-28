@@ -548,10 +548,12 @@ $BASIC_GREY:#F2F2F2;
 /*-----------------HOW IT WORK--------------------------*/
 
 .howItWork {
+    margin-bottom: 69px;
     &__holder {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 69px;
+        flex-wrap: wrap;
+        row-gap: 130px;
     }
     &__card {
         position: relative;
@@ -600,7 +602,32 @@ $BASIC_GREY:#F2F2F2;
     }
     
 }
-.howItWork__container {
-}
-.hdr {
+
+
+@media(max-width:520px){
+   
+    .howItWork{
+        &__holder {
+            flex-direction: column;
+            row-gap: 20px;
+    }
+        &__card {
+        position: relative;
+        flex-direction:row;
+        max-width: 100%;
+        column-gap: 20px;
+    }
+    &__image{
+        height: 60px;
+        width: 60px;
+        flex-shrink: 0;
+    }
+        &__point{
+            display: none;
+    }
+    &__text{
+        font-size: 14px;
+    }
+    }
+
 }
