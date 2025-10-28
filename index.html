@@ -28,7 +28,7 @@
             <nav class="header__menu">
                 <ul class="header__list">
                     <li><a href="#" class="header__link">главная</a></li>
-                    <li><a href="#" class="header__link">Каталог продукции</a></li>
+                    <li><a href="#" class="header__link">каталог продукции</a></li>
                     <li><a href="#" class="header__link">подбор программы</a></li>
                 </ul>
             </nav>
@@ -164,8 +164,8 @@
                             <span>Затраты на питание:</span><span>15 000 РУБ.</span>
                         </div>
                     </div>
-                    <div class="example__beforeAfter">
-                        <div class="slider">
+                    <div class="example__beforeAfter beforeAfter">
+                        <div class="beforeAfter__slider slider">
                             <picture>
                                 <img src="./img/example/before.png" alt="До" class="slider__img slider__img--before" width="300" height="300">
                             </picture>
@@ -173,7 +173,11 @@
                                 <img src="./img/example/after.png" alt="После" class="slider__img slider__img--after" width="300" height="300">
                             </picture>
 
-                            <input type="range" class="slider__range-js" min="0" max="100" value="50" step="1">
+                        </div>
+                        <div class="slider__range">
+                            <span>было</span>
+                            <input type="range" class="slider__range-js" min="7" max="100" value="50" step="1">
+                            <span>стало</span>
                         </div>
                     </div>
                     
