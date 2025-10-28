@@ -71,6 +71,13 @@ body {
   line-height: 100%;
 }
 
+.text {
+  font-family: "Arial";
+  font-size: 16px;
+  color: #444444;
+  line-height: 150%;
+}
+
 /*-------------------HEADER------------------------*/
 .header {
   height: 165px;
@@ -402,8 +409,7 @@ body {
   border-radius: 50%;
 }
 .card-info__text {
-  line-height: 150%;
-  font-family: "Arial";
+  color: #000;
   margin-bottom: 23px;
 }
 .card-info__button {
@@ -530,7 +536,6 @@ body {
 }
 .howItWork__text {
   z-index: 2;
-  color: #444444;
 }
 .howItWork__point {
   top: 50%;
@@ -565,6 +570,57 @@ body {
   .howItWork__text {
     font-size: 14px;
   }
+}
+/*------------------EXAMPLE---------------------------*/
+.example__header {
+  margin-bottom: 76px;
+}
+.example__block {
+  padding: 70px 0 75px 0;
+  background-color: #F2F2F2;
+}
+.example__container {
+  display: flex;
+}
+.example__content {
+  flex: 0 1 35%;
+}
+.example__text {
+  margin-bottom: 69px;
+}
+.example__stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.example__stat {
+  position: relative;
+  width: 162px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  padding: 15px 25px;
+  text-align: center;
+}
+.example__stat-value {
+  font-size: 30px;
+}
+.example__stat-label {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F2F2F2;
+  padding: 0 8px;
+  font-size: 14px;
+  font-family: "Arial";
+  color: #444444;
+  white-space: nowrap;
+}
+.example__cost {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: flex;
+  column-gap: 63px;
 }
 
 /*# sourceMappingURL=style.css.map */

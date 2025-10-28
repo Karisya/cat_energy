@@ -72,13 +72,20 @@ $WHITE:#ffff;
 $BLACK:#000;
 $DARK_GREY:#444444;
 $BASIC_GREY:#F2F2F2;
+$GREY:#CDCDCD;
 
 
 .hdr{
     font-size: 60px;
     font-weight: 400;
     line-height: 100%;
+}
 
+.text{
+    font-family: "Arial";
+    font-size: 16px;
+    color: $DARK_GREY;
+    line-height: 150%;
 }
 
 /*-------------------HEADER------------------------*/
@@ -450,8 +457,7 @@ $BASIC_GREY:#F2F2F2;
         }
     }
     &__text {
-        line-height: 150%;
-        font-family: "Arial";
+        color: $BLACK;
         margin-bottom: 23px;
     }
     &__button {
@@ -588,7 +594,6 @@ $BASIC_GREY:#F2F2F2;
     }
     &__text {
         z-index: 2;
-        color: $DARK_GREY;
     }
     &__point{
         top: 50%;
@@ -629,5 +634,64 @@ $BASIC_GREY:#F2F2F2;
         font-size: 14px;
     }
     }
+}
+
+/*------------------EXAMPLE---------------------------*/
+
+.example {
+    &__header {
+        margin-bottom: 76px;
+    }
+    &__block {
+        padding: 70px 0 75px 0;
+        background-color: $BASIC_GREY;
+    }
+    &__container {
+        display: flex;
+    }
+    &__content {
+        flex: 0 1 35%;
+    }
+    &__text{
+        margin-bottom: 69px;
+    }
+
+    &__stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+
+  &__stat {
+    position: relative;
+    width: 162px;
+    border: 1px solid $GREY;
+    border-radius: 3px;
+    padding: 15px 25px;
+    text-align: center;
+  }
+
+  &__stat-value {
+    font-size: 30px;
+  }
+
+  &__stat-label {
+    position: absolute;
+    bottom: -8px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $BASIC_GREY;
+    padding: 0 8px; 
+    font-size: 14px;
+    font-family: "Arial";
+    color: $DARK_GREY;
+    white-space: nowrap;
+}
+&__cost {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    column-gap: 63px;
+}
 
 }
