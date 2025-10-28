@@ -100,7 +100,7 @@ $DARK_GREY:#444444;
     }
     &__list {
         display: flex;
-        color: #000;
+        color: $WHITE;
         align-items: center;
         text-align: center;
         li{
@@ -119,7 +119,7 @@ $DARK_GREY:#444444;
                 left: 0;
                 width: 0;
                 height: 2px;
-                background-color: $BLACK;
+                background-color: $WHITE;
                 transition: width 0.3s ease;
             }
 
@@ -147,6 +147,11 @@ $DARK_GREY:#444444;
         &__list{
             color: $BLACK;
             column-gap: 35px;
+            li{
+                &::after {
+                background-color: $BASIC_GREEN;
+            }
+            }
         }
         &__link{
             font-size: 18px;
@@ -240,20 +245,29 @@ $DARK_GREY:#444444;
 /*------------------MAINBLOCK-------------------------*/
 
 .mainblock {
-    height: 720px;
+    height: 696px;
     display: flex;
     background: url("../img/background-image.jpg") right center / 50% auto no-repeat,$WHITE;
     align-items: center;
     &__container{
-
+        position: relative;
+        max-width: 940px;
+        display: flex;
+        justify-content: space-between;
+        top: 50px;
+        width: 100%;
+        align-items: center;
     }
     &__content{
         display: flex;
         flex-direction: column;
         align-items: baseline;
         max-width: 415px;
+        width: 100%;
     }
     &__header {
+        font-weight: 400;
+        line-height: 100%;
         font-size: 60px;
         margin-bottom: 40px;
     }
@@ -268,6 +282,11 @@ $DARK_GREY:#444444;
         font-size: 20px;
         color: $WHITE;
         text-transform: uppercase;
+    }
+    &__image{
+        img{
+            max-width: 100%;
+        }
     }
     
 }
