@@ -983,7 +983,7 @@ body {
 /*-----------------FOOTER------------------*/
 .footer {
   background-color: #EAEAEA;
-  height: 149px;
+  min-height: 149px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -1010,12 +1010,12 @@ body {
 
 @media (max-width: 767.98px) {
   .footer {
-    height: 150px;
+    min-height: 150px;
   }
 }
 @media (max-width: 550px) {
   .footer {
-    height: 236px;
+    min-height: 236px;
   }
   .footer__logo {
     width: 100%;
