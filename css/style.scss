@@ -1022,6 +1022,9 @@ $SPECIAL_GREY:#EAEAEA;
         width: 155px;
     }
 }
+#map {
+  height: 400px;
+}
 }
 
 @media(max-width:400px){
@@ -1040,25 +1043,17 @@ $SPECIAL_GREY:#EAEAEA;
         row-gap: 2px;
     }
 }
+  #map {
+    height: 362px;
+  }
 }
+
 
 #map {
   width: 100%;
   height: 400px; 
 }
 
-
-@media (max-width: 768px) {
-  #map {
-    height: 400px;
-  }
-}
-
-@media (max-width: 400px) {
-  #map {
-    height: 362px;
-  }
-}
 
 
 /*-----------------FOOTER------------------*/
