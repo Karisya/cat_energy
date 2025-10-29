@@ -252,6 +252,9 @@ body {
   align-items: baseline;
   max-width: 415px;
 }
+.mainblock__content a {
+  color: white;
+}
 .mainblock__header {
   margin-bottom: 40px;
   z-index: 3;
@@ -320,6 +323,9 @@ body {
   .mainblock__image img {
     height: 400px;
   }
+  .mainblock__header {
+    font-size: 45px;
+  }
 }
 @media (max-width: 340.98px) {
   .mainblock {
@@ -357,7 +363,7 @@ body {
     margin-bottom: 29px;
   }
   .mainblock__button {
-    padding: 7px auto;
+    padding: 7px 40px;
     font-size: 14px;
   }
 }

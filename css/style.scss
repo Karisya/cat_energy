@@ -277,6 +277,9 @@ $SPECIAL_GREY:#EAEAEA;
         flex-direction: column;
         align-items: baseline;
         max-width: 415px;
+        a{
+            color: $WHITE;
+        }
     }
     &__header {
         margin-bottom: 40px;
@@ -357,7 +360,10 @@ $SPECIAL_GREY:#EAEAEA;
     img {
       height: 400px;
     }
-    }
+}
+&__header{
+    font-size: 45px;
+}
 }
 }
 @media(max-width:340.98px){
@@ -398,7 +404,7 @@ $SPECIAL_GREY:#EAEAEA;
         margin-bottom: 29px;
     }
     &__button {
-        padding: 7px auto;
+        padding: 7px 40px;
         font-size: 14px;
     }
 }
