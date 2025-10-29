@@ -84,7 +84,7 @@ body {
 
 /*-------------------HEADER------------------------*/
 .header {
-  height: 165px;
+  min-height: 165px;
   position: fixed;
   top: 0;
   left: 0;
@@ -110,15 +110,10 @@ body {
   color: white;
   align-items: center;
   text-align: center;
+  column-gap: 37px;
 }
 .header__list li {
   position: relative;
-}
-.header__list li:first-child {
-  margin-right: 37px;
-}
-.header__list li:last-child {
-  margin-left: 32px;
 }
 .header__list li::after {
   content: "";
@@ -140,7 +135,7 @@ body {
 
 @media (max-width: 767.98px) {
   .header {
-    height: 100px;
+    min-height: 100px;
   }
   .header .logo-desktop, .header .logo-mobile {
     display: none;

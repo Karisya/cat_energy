@@ -97,7 +97,7 @@ $SPECIAL_GREY:#EAEAEA;
 /*-------------------HEADER------------------------*/
 
 .header {
-    height: 165px;
+    min-height: 165px;
     position: fixed;
     top: 0;
     left: 0;
@@ -125,15 +125,9 @@ $SPECIAL_GREY:#EAEAEA;
         color: $WHITE;
         align-items: center;
         text-align: center;
+        column-gap: 37px;
         li{
             position: relative;
-            &:first-child{
-                margin-right: 37px;
-            }
-            &:last-child{
-                margin-left: 32px;
-            }
-
               &::after {
                 content: "";
                 position: absolute;
@@ -144,7 +138,6 @@ $SPECIAL_GREY:#EAEAEA;
                 background-color: $WHITE;
                 transition: width 0.3s ease;
             }
-
             &:hover::after {
                 width: 100%;
             }
@@ -157,9 +150,8 @@ $SPECIAL_GREY:#EAEAEA;
 }
 
 @media(max-width:767.98px){
-
     .header{
-        height: 100px;
+        min-height: 100px;
         .logo-desktop,.logo-mobile{
         display: none;
         }
@@ -183,7 +175,6 @@ $SPECIAL_GREY:#EAEAEA;
 
 @media(max-width:710px){
     .header{
-
         &__list{
             font-size: 16px;
             color: $BLACK;
