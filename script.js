@@ -42,7 +42,7 @@ function init() {
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "./img/map-icon.svg",
+      iconImageHref: "./assets/map-icon.svg",
       iconImageSize: iconSize,
       iconImageOffset: iconOffset,
     }
