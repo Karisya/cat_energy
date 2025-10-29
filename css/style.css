@@ -237,7 +237,7 @@ body {
   margin-bottom: 82px;
   height: 696px;
   display: flex;
-  background: linear-gradient(to right, white 50%, transparent 50%), url("../img/mainblock/background-image.jpg") right center/contain no-repeat;
+  background: linear-gradient(to right, white 50%, transparent 50%), url("../assets/mainblock/background-image.jpg") right center/contain no-repeat;
   align-items: center;
 }
 .mainblock__container {
@@ -287,7 +287,7 @@ body {
 
 @media (max-width: 994px) {
   .mainblock {
-    background: linear-gradient(to right, white 35%, transparent 0%), url("../img/mainblock/background-image.jpg") right center/contain no-repeat;
+    background: linear-gradient(to right, white 35%, transparent 0%), url("../assets/mainblock/background-image.jpg") right center/contain no-repeat;
   }
 }
 @media (max-width: 863px) {
@@ -331,7 +331,7 @@ body {
 @media (max-width: 340.98px) {
   .mainblock {
     height: 100%;
-    background: url("../img/mainblock/background-image.jpg") right center/contain no-repeat;
+    background: url("../assets/mainblock/background-image.jpg") right center/contain no-repeat;
     margin-bottom: 120px;
   }
   .mainblock__container {
