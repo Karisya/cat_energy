@@ -607,8 +607,6 @@ $SPECIAL_GREY:#EAEAEA;
     }
     
 }
-
-
 @media(max-width:520px){
    
     .howItWork{
@@ -775,6 +773,7 @@ $SPECIAL_GREY:#EAEAEA;
     object-position: calc(100% + 40px) center; 
   }}
 }
+
 @media(max-width:767.98px){
 .example{
     &__beforeAfter{
@@ -813,12 +812,6 @@ $SPECIAL_GREY:#EAEAEA;
     width: 702px;
     height: 620px;
     bottom: 90px;
-    &__range-js {
-        width: 70%;
-    }
-    &__img--after {
-    object-position: calc(100% + 40px) center; 
-  }
     &__range{
         position: absolute;
         max-width: 650px;
@@ -838,7 +831,6 @@ $SPECIAL_GREY:#EAEAEA;
 }
 }
 .slider {
-    width: 90%;
     width: 500px;
     height: 460px;
 }
@@ -893,7 +885,6 @@ $SPECIAL_GREY:#EAEAEA;
 }
 
 .slider {
-    width: 90%;
     width: 300px;
     height: 232px;
 

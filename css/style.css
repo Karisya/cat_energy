@@ -745,12 +745,6 @@ body {
     height: 620px;
     bottom: 90px;
   }
-  .slider__range-js {
-    width: 70%;
-  }
-  .slider__img--after {
-    object-position: calc(100% + 40px) center;
-  }
   .slider__range {
     position: absolute;
     max-width: 650px;
@@ -768,7 +762,6 @@ body {
     height: 300px;
   }
   .slider {
-    width: 90%;
     width: 500px;
     height: 460px;
   }
@@ -818,7 +811,6 @@ body {
     background-color: #EAEAEA;
   }
   .slider {
-    width: 90%;
     width: 300px;
     height: 232px;
   }
