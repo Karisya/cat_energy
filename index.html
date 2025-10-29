@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/arial" rel="stylesheet"> 
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 </head>
 <body>
     <header class="header">
@@ -150,7 +152,9 @@
                             без изнуряющих тренировок! При этом он не менял своих 
                             привычек и по-прежнему спит по 16 часов в день. 
                         </p>
-                        <div class="example__stats">
+                        <div>
+                          <div class="example__info">  
+                            <div class="example__stats">
                             <div class="example__stat">
                               <span class="example__stat-value">5 КГ</span>
                               <span class="example__stat-label">снижение веса</span>
@@ -161,7 +165,8 @@
                             </div>
                         </div>
                         <div class="example__cost">
-                            <span>Затраты на питание:</span><span>15 000 РУБ.</span>
+                                <span>Затраты на питание:</span><span>15 000 РУБ.</span>
+                            </div>
                         </div>
                     </div>
                     <div class="example__beforeAfter beforeAfter">
@@ -174,36 +179,25 @@
                             </picture>
 
                         </div>
-                        <div class="slider__range">
-                            <span>было</span>
+                        <div class="slider__range range">
+                            <span class="range-before">было</span>
                             <input type="range" class="slider__range-js" min="7" max="100" value="50" step="1">
-                            <span>стало</span>
+                            <span class="range-after">стало</span>
                         </div>
-                    </div>
-                    
+                    </div> 
                 </div>
             </div>
         </section>
-
-        
-
-
-
-
-
-
-
-</section>
-
-    </main>
-    <script>
-const slider = document.querySelector('.slider');
-const range = document.querySelector('.slider__range-js');
-
-range.addEventListener('input', () => {
-  slider.style.setProperty('--value', range.value + '%');
-});
-</script>
-
+        <div class="page__map map" id="map">
+            <div class="map__info-box">
+                <h3>ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
+                <div class="map__content">
+                    <p>ул. Большая Конюшенная, д. 19/8</p>
+                    <p>Санкт-Петербург</p>
+                </div>
+            </div>
+        </div>
+</main>
+<script src="./script.js"></script>
 </body>
 </html>
