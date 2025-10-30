@@ -198,7 +198,8 @@ body {
 
 @media (max-width: 600px) {
   .header__menu {
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     top: 0;
     right: 0;
     background: #68B738;
@@ -216,6 +217,8 @@ body {
     align-items: baseline;
   }
   .burger {
+    position: fixed;
+    right: 15px;
     z-index: 100;
     display: flex;
   }
